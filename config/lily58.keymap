@@ -8,6 +8,15 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    macros {
+        greater: greater {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp KP_EQUAL &kp GREATER_THAN>;
+            label = "GREATER";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -41,11 +50,11 @@
 
             display-name = "Lower";
             bindings = <
-&kp EQUAL      &kp EXCL  &kp AT       &kp HASH        &kp DOLLAR         &kp PRCNT                                         &kp CARET  &kp AMPS  &kp STAR         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS
-&kp LG(GRAVE)  &kp F2    &kp KP_PLUS  &kp UP_ARROW    &kp LA(BACKSPACE)  &kp KP_DIVIDE                                     &kp F7     &kp F8    &kp F9           &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE
-&kp GRAVE      &kp EXCL  &kp LEFT     &kp DOWN_ARROW  &kp LA(BACKSPACE)  &kp LG(Z)                                         &kp CARET  &kp AMPS  &kp KP_MULTIPLY  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE
-&kp F1         &kp F2    &kp F3       &kp F4          &kp LC(LS(TAB))    &kp LC(TAB)    &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp F7     &kp F8    &kp F9           &kp LESS_THAN         &kp GREATER_THAN       &kp RIGHT_SHIFT
-                                      &trans          &trans             &trans         &trans            &trans           &trans     &trans    &trans
+&kp EQUAL      &kp EXCL   &kp AT        &kp HASH      &kp DOLLAR           &kp PRCNT                                         &kp CARET  &kp AMPS  &kp STAR         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS
+&kp LG(GRAVE)  &kp F2     &kp KP_PLUS   &kp UP_ARROW  &kp LA(BACKSPACE)    &kp KP_DIVIDE                                     &kp F7     &kp F8    &kp F9           &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE
+&kp GRAVE      &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LA(RIGHT_SHIFT)  &kp LG(Z)                                         &kp CARET  &kp AMPS  &kp KP_MULTIPLY  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE
+&kp F1         &kp F2     &kp F3        &kp F4        &kp LC(LS(TAB))      &kp LC(TAB)    &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp F7     &kp F8    &kp F9           &kp LESS_THAN         &kp GREATER_THAN       &kp RIGHT_SHIFT
+                                        &trans        &trans               &trans         &trans            &trans           &trans     &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
