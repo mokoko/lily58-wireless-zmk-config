@@ -67,7 +67,7 @@
             bindings = <
 &kp EQUAL      &kp EXCL                &kp AT                   &kp HASH                 &kp DOLLAR       &kp PRCNT                                             &kp CARET  &kp AMPS  &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS
 &kp LG(GRAVE)  &kp LG(N)               &kp LA(LG(LEFT_ARROW))   &kp LA(LG(RIGHT_ARROW))  &kp LC(LS(TAB))  &kp LC(TAB)                                           &trans     &trans    &trans    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE
-&kp GRAVE      &kp LCTRL               &kp LEFT_ALT             &kp LEFT_GUI             &kp RIGHT_SHIFT  &kp LG(Z)                                             &trans     &trans    &trans    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE
+&kp KP_PLUS    &kp LCTRL               &kp LEFT_ALT             &kp LEFT_GUI             &kp RIGHT_SHIFT  &kp LG(Z)                                             &trans     &trans    &trans    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE
 &kp F3         &kp LC(LA(LEFT_ARROW))  &kp RA(RC(RIGHT_ARROW))  &kp F10                  &kp F11          &kp F12      &kp LG(LS(NUMBER_4))    &kp RIGHT_BRACE  &trans     &trans    &trans    &kp LESS_THAN         &kp GREATER_THAN       &kp RIGHT_SHIFT
                                                                 &kp LG(LA(F))            &kp LG(LA(C))    &trans       &trans                  &trans           &trans     &trans    &trans
             >;
@@ -85,8 +85,8 @@
 
             display-name = "Raise";
             bindings = <
-&trans     &trans  &trans  &trans   &trans   &trans                                                  &kp LESS_THAN  &kp GREATER_THAN    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
-&kp GRAVE  &kp N1  &kp N2  &kp N3   &kp N4   &kp N5                                                  &lessthan      &kp LA(LEFT_ARROW)  &kp UP_ARROW          &kp RA(RIGHT_ARROW)    &trans          &kp RG(PLUS)
+&kp GRAVE  &trans  &trans  &trans   &trans   &trans                                                  &kp LESS_THAN  &kp GREATER_THAN    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
+&kp GRAVE  &trans  &trans  &trans   &trans   &trans                                                  &kp HOME       &kp LA(LEFT_ARROW)  &kp UP_ARROW          &kp RA(RIGHT_ARROW)    &kp END         &kp RG(PLUS)
 &kp F1     &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                                                  &selectword    &kp LEFT            &kp DOWN              &kp RIGHT              &trans          &kp RG(KP_MINUS)
 &kp F7     &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &kp LC(LA(LG(LEFT)))    &kp RA(RC(RG(RIGHT)))  &kp F3         &kp F10             &kp EQUAL             &kp LBKT               &kp RBKT        &kp BSLH
                            &trans   &trans   &trans   &trans                  &trans                 &trans         &kp LA(LG(LEFT))    &kp RA(RG(RIGHT))
@@ -97,10 +97,10 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans     &trans  &trans     &trans  &kp LC(LG(Q))
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &mkp LCLK  &trans  &mkp RCLK  &trans  &kp LG(LS(NUMBER_4))
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans     &trans  &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans     &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans     &trans  &trans     &trans                      &kp LC(LG(Q))
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &mkp LCLK  &trans  &mkp RCLK  &kp LC(LG(LA(LEFT_ARROW)))  &kp RG(RC(RA(RIGHT_ARROW)))
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans     &trans  &trans     &trans                      &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans     &trans  &trans     &trans                      &trans
                         &trans  &trans  &trans  &trans    &trans  &trans  &trans     &trans
             >;
         };
