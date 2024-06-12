@@ -6,7 +6,6 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
 
 / {
     macros {
@@ -29,6 +28,20 @@
             #binding-cells = <0>;
             bindings = <&kp LS(LEFT_ARROW)>;
             label = "SELECTWORD";
+        };
+
+        email: email {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp A &kp L &kp P &kp E &kp R &kp Y &kp A &kp Y &kp L &kp A &kp C &kp I &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+            label = "EMAIL";
+        };
+
+        email2: email2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp T &kp H &kp E &kp DOT &kp M &kp I &kp K &kp H &kp A &kp I &kp L &kp DOT &kp T &kp A &kp L &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+            label = "EMAIL2";
         };
     };
 
@@ -97,11 +110,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans     &trans  &trans     &trans                      &kp LC(LG(Q))
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &mkp LCLK  &trans  &mkp RCLK  &kp LC(LG(LA(LEFT_ARROW)))  &kp RG(RC(RA(RIGHT_ARROW)))
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans     &trans  &trans     &trans                      &kp PAGE_UP
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans     &trans  &trans     &trans                      &kp PAGE_DOWN
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &email  &email2                     &kp LC(LG(Q))
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &kp LC(LG(LA(LEFT_ARROW)))  &kp RG(RC(RA(RIGHT_ARROW)))
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans                      &kp PAGE_UP
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans                      &kp PAGE_DOWN
+                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
     };
