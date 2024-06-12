@@ -99,8 +99,8 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans     &trans  &trans     &trans                      &kp LC(LG(Q))
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &mkp LCLK  &trans  &mkp RCLK  &kp LC(LG(LA(LEFT_ARROW)))  &kp RG(RC(RA(RIGHT_ARROW)))
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans     &trans  &trans     &trans                      &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans     &trans  &trans     &trans                      &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans     &trans  &trans     &trans                      &kp PAGE_UP
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans     &trans  &trans     &trans                      &kp PAGE_DOWN
                         &trans  &trans  &trans  &trans    &trans  &trans  &trans     &trans
             >;
         };
