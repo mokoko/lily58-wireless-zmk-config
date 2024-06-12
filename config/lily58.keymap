@@ -85,11 +85,11 @@
 
             display-name = "Raise";
             bindings = <
-&kp GRAVE  &trans  &trans  &trans  &trans  &trans                                                 &kp LESS_THAN  &kp GREATER_THAN    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
-&trans     &trans  &trans  &trans  &trans  &trans                                                 &kp HOME       &kp LA(LEFT_ARROW)  &kp UP_ARROW          &kp RA(RIGHT_ARROW)    &kp END         &kp RG(PLUS)
-&trans     &trans  &trans  &trans  &trans  &trans                                                 &selectword    &kp LEFT            &kp DOWN              &kp RIGHT              &trans          &kp RG(KP_MINUS)
-&trans     &trans  &trans  &trans  &trans  &trans  &kp LC(LA(LG(LEFT)))    &kp RA(RC(RG(RIGHT)))  &kp F7         &kp F8              &kp F9                &kp LBKT               &kp RBKT        &kp BSLH
-                           &trans  &trans  &trans  &trans                  &trans                 &trans         &kp LA(LG(LEFT))    &kp RA(RG(RIGHT))
+&kp GRAVE  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp KP_SUBTRACT  &kp KP_PLUS                                                     &kp LESS_THAN           &kp GREATER_THAN    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
+&trans     &trans        &trans         &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9                                                 &kp HOME                &kp LA(LEFT_ARROW)  &kp UP_ARROW          &kp RA(RIGHT_ARROW)    &kp END         &kp RG(PLUS)
+&trans     &trans        &trans         &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6                                                 &kp LS(LA(LEFT_ARROW))  &kp LEFT            &kp DOWN              &kp RIGHT              &trans          &kp RG(KP_MINUS)
+&trans     &trans        &trans         &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LC(LA(LG(LEFT)))    &kp RA(RC(RG(RIGHT)))  &kp F7                  &kp F8              &kp F9                &kp LBKT               &kp RBKT        &kp BSLH
+                                        &trans           &trans           &kp KP_NUMBER_0  &trans                  &trans                 &trans                  &kp LA(LG(LEFT))    &kp RA(RG(RIGHT))
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
