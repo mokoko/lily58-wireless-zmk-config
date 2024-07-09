@@ -64,6 +64,11 @@
             bindings = <&kp LA(BACKSPACE)>;
             key-positions = <31 32>;
         };
+
+        triple-delete {
+            bindings = <&kp LG(BACKSPACE)>;
+            key-positions = <31 32 33>;
+        };
     };
 
     keymap {
