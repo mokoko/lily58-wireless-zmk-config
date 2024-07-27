@@ -60,7 +60,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "UNDO_WEBPAGES";
             #binding-cells = <0>;
-            bindings = <&kp T>, <&kp LS(LG(T))>;
+            bindings = <&kp T>, <&kp LG(T)>, <&kp LG(LS(N))>;
         };
     };
 
@@ -77,6 +77,16 @@
             bindings = <&kp LG(BACKSPACE)>;
             key-positions = <31 32 33>;
             layers = <2>;
+        };
+
+        webpage-undo {
+            bindings = <&kp LS(LG(T))>;
+            key-positions = <4 17>;
+        };
+
+        df-undo {
+            bindings = <&kp LG(Z)>;
+            key-positions = <28 27>;
         };
     };
 
@@ -150,16 +160,6 @@
 &kp LC(LG(LEFT))            &kp RC(RG(RIGHT))      &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans                &kp PAGE_UP
 &kp RS(RG(RC(LEFT_ARROW)))  &kp RS(RC(RG(RIGHT)))  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans                &kp PAGE_DOWN
                                                            &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
-            >;
-        };
-
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
     };
