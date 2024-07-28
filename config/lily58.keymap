@@ -97,6 +97,12 @@
             key-positions = <28 27>;
             layers = <0>;
         };
+
+        new_chrome_tab {
+            bindings = <&kp LG(T)>;
+            key-positions = <5 17>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -112,11 +118,11 @@
 
             display-name = "Base";
             bindings = <
-&logout_shortkeys  &kp N1  &kp N2  &kp N3        &kp N4    &kp N5                                            &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
-&kp TAB            &kp Q   &kp W   &kp E         &kp R     &new_webpages                                     &kp Y   &kp U   &kp I      &kp O    &kp P     &kp APOSTROPHE
-&kp LCTRL          &kp A   &kp S   &kp D         &kp F     &kp G                                             &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp ENTER
-&kp LEFT_SHIFT     &kp Z   &kp X   &kp C         &kp V     &kp B          &kp ENTER        &kp LS(LG(LEFT))  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                                   &kp LEFT_ALT  &kp LGUI  &mo 1          &kp BACKSPACE    &kp SPACE         &mo 2   &mo 3   &mo 3
+&logout_shortkeys  &kp N1  &kp N2  &kp N3        &kp N4    &kp N5                                     &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
+&kp TAB            &kp Q   &kp W   &kp E         &kp R     &kp T                                      &kp Y   &kp U   &kp I      &kp O    &kp P     &kp APOSTROPHE
+&kp LCTRL          &kp A   &kp S   &kp D         &kp F     &kp G                                      &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp ENTER
+&kp LEFT_SHIFT     &kp Z   &kp X   &kp C         &kp V     &kp B   &kp ENTER        &kp LS(LG(LEFT))  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+                                   &kp LEFT_ALT  &kp LGUI  &mo 1   &kp BACKSPACE    &kp SPACE         &mo 2   &mo 3   &mo 3
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -164,10 +170,10 @@
 
         layer_4 {
             bindings = <
-&kp LA(LG(LC(LEFT_ARROW)))  &kp RA(RC(RG(RIGHT)))  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans                &kp LC(LG(Q))
-&kp LG(GRAVE)               &trans                 &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &kp LA(LC(LG(LEFT)))  &kp RA(RC(RG(RIGHT_ARROW)))
-&kp LC(LG(LEFT))            &kp RC(RG(RIGHT))      &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans                &kp PAGE_UP
-&kp RS(RG(RC(LEFT_ARROW)))  &kp RS(RC(RG(RIGHT)))  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans                &kp PAGE_DOWN
+&kp LA(LG(LC(LEFT_ARROW)))  &kp RA(RC(RG(RIGHT)))  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans                      &trans
+&kp LG(GRAVE)               &trans                 &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans                      &trans
+&kp LC(LG(LEFT))            &kp RC(RG(RIGHT))      &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &kp LC(LG(LEFT_ARROW))      &kp RC(RG(RIGHT_ARROW))
+&kp RS(RG(RC(LEFT_ARROW)))  &kp RS(RC(RG(RIGHT)))  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &kp LS(LG(LC(LEFT_ARROW)))  &kp RS(RC(RG(RIGHT_ARROW)))
                                                            &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
