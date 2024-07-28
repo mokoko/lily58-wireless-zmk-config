@@ -77,23 +77,25 @@
         jkjk {
             bindings = <&kp LA(BACKSPACE)>;
             key-positions = <31 32>;
-            layers = <2>;
+            layers = <0>;
         };
 
         triple-delete {
             bindings = <&kp LG(BACKSPACE)>;
             key-positions = <31 32 33>;
-            layers = <2>;
+            layers = <0>;
         };
 
         webpage-undo {
             bindings = <&kp LS(LG(T))>;
             key-positions = <4 17>;
+            layers = <0>;
         };
 
         df-undo {
             bindings = <&kp LG(Z)>;
             key-positions = <28 27>;
+            layers = <0>;
         };
     };
 
