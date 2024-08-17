@@ -100,7 +100,7 @@
 
         new_chrome_tab {
             bindings = <&kp LG(T)>;
-            key-positions = <26 25>;
+            key-positions = <53 28>;
             layers = <0>;
         };
     };
