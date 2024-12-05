@@ -91,24 +91,6 @@
             key-positions = <25 28>;
             layers = <0>;
         };
-
-        df-undo {
-            bindings = <&kp LG(Z)>;
-            key-positions = <28 27>;
-            layers = <0>;
-        };
-
-        new_chrome_tab {
-            bindings = <&kp LG(T)>;
-            key-positions = <53 28>;
-            layers = <0>;
-        };
-
-        newtab_v2 {
-            bindings = <&kp LG(T)>;
-            key-positions = <25 26>;
-            layers = <0>;
-        };
     };
 
     keymap {
