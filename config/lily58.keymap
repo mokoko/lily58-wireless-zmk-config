@@ -146,7 +146,7 @@
 
             display-name = "Raise";
             bindings = <
-&trans  &trans            &trans        &trans        &trans          &trans                                                 &kp LESS_THAN           &kp GREATER_THAN    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE       &kp RIGHT_BRACE
+&kp F1  &kp F2            &kp F3        &kp F4        &kp F5          &kp F6                                                 &kp LESS_THAN           &kp GREATER_THAN    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE       &kp RIGHT_BRACE
 &trans  &trans            &trans        &trans        &trans          &trans                                                 &greater                &kp LA(LEFT_ARROW)  &kp UP_ARROW          &kp RA(RIGHT_ARROW)    &kp LG(PLUS)         &trans
 &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans                                                 &kp LS(LA(LEFT_ARROW))  &kp LEFT            &kp DOWN              &kp RIGHT              &kp LG(KP_SUBTRACT)  &kp ENTER
 &trans  &trans            &trans        &trans        &trans          &trans  &kp LC(LA(LG(LEFT)))    &kp RA(RC(RG(RIGHT)))  &kp F7                  &kp F8              &kp F9                &kp LBKT               &kp RBKT             &kp LA(BACKSPACE)
