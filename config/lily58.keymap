@@ -150,7 +150,7 @@
 &kp F1  &kp F2            &kp F3        &kp F4        &kp F5          &kp F6                                                 &kp LESS_THAN           &kp GREATER_THAN    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE       &kp RIGHT_BRACE
 &trans  &trans            &trans        &trans        &trans          &trans                                                 &greater                &kp LA(LEFT_ARROW)  &kp UP_ARROW          &kp RA(RIGHT_ARROW)    &kp LG(PLUS)         &kp BACKSLASH
 &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans                                                 &kp LS(LA(LEFT_ARROW))  &kp LEFT            &kp DOWN              &kp RIGHT              &kp LG(KP_SUBTRACT)  &kp ENTER
-&trans  &trans            &trans        &trans        &trans          &trans  &kp LC(LA(LG(LEFT)))    &kp RA(RC(RG(RIGHT)))  &kp F7                  &kp F8              &kp F9                &kp LBKT               &kp RBKT             &kp LA(BACKSPACE)
+&trans  &trans            &trans        &trans        &trans          &trans  &kp LC(LA(LG(LEFT)))    &kp RA(RC(RG(RIGHT)))  &kp INSERT              &kp HOME            &kp END               &trans                 &kp LEFT_BRACKET     &kp RIGHT_BRACKET
                                         &kp LEFT_ALT  &kp LEFT_GUI    &trans  &kp BACKSPACE           &kp ENTER              &trans                  &kp LA(LG(LEFT))    &kp RA(RG(RIGHT))
             >;
 
@@ -162,7 +162,7 @@
 &kp LA(LG(LC(LEFT_ARROW)))  &kp RA(RC(RG(RIGHT)))  &trans  &trans  &trans  &trans                               &trans        &trans        &trans        &trans          &trans                      &trans
 &kp LG(GRAVE)               &trans                 &trans  &trans  &trans  &trans                               &trans        &trans        &trans        &bt BT_CLR_ALL  &bt BT_PRV                  &bt BT_NXT
 &kp LC(LG(LEFT))            &kp RC(RG(RIGHT))      &trans  &trans  &trans  &trans                               &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR      &kp LC(LG(LEFT_ARROW))      &kp RC(RG(RIGHT_ARROW))
-&kp RS(RG(RC(LEFT_ARROW)))  &kp RS(RC(RG(RIGHT)))  &trans  &trans  &trans  &trans  &trans    &trans             &trans        &trans        &trans        &trans          &kp LS(LG(LC(LEFT_ARROW)))  &kp RS(RC(RG(RIGHT_ARROW)))
+&kp RS(RG(RC(LEFT_ARROW)))  &kp RS(RC(RG(RIGHT)))  &trans  &trans  &trans  &trans  &trans    &trans             &kp F7        &kp F8        &kp F9        &trans          &kp LS(LG(LC(LEFT_ARROW)))  &kp RS(RC(RG(RIGHT_ARROW)))
                                                            &trans  &trans  &trans  &trans    &logout_shortkeys  &trans        &trans        &trans
             >;
         };
